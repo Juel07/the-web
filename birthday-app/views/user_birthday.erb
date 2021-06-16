@@ -5,12 +5,12 @@
         <link href="<%= url("/styles.css") %>" rel="stylesheet" type="text/css" />
     </head>
     <body>
-    <div class="container">
-    <%# if %>
-        <h1>Happy Birthday <%= @name %>! 🎉</h1>
-    <%#else %> 
-        <h1>Your birthday is in <%= @days %> days, <%= @name %> 😁</h1>
-    <%# end %>
-    </div>
+        <div class="container">
+        <%# if @days_left == 0 %>
+            <h1>Happy Birthday <%= @name %>! 🎉</h1>
+        <%#else %> 
+            <h1>Your birthday is in <%= @days_left %> days, <%= @name %> 😁</h1>
+        <%# end %>
+        </div>
     </body>
 </html>

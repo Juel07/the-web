@@ -10,8 +10,9 @@ get "/" do # form
 end
 
 post "/birthday" do # birthday greetings & countdown
-  p params
+  puts params
   @name = params[:name]
-  @days = params[:days]
+  @day = params[:day]
+  @days_left = 8
   erb :user_birthday
 end

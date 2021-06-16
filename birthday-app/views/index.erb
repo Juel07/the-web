@@ -6,20 +6,20 @@
     </head>
     <body>
         <div class="container">
-            <h1>Hello there! <%= @name %></h1>
+            <h1>Hello there!</h1>
             <form action="/birthday" method="post">
             <section>
                 <label for="name"><span>What's your name?</span></label>
             </section>
             <section>
-                <input type="text" id="name" placeholder="First name">
+                <input type="text" name="name" id="name" placeholder="First name" required>
             </section>
             <section>
                 <label for="day"><span>When's your birthday?</span></label>
             </section>
             <section>
-                <input type="number" id="day" placeholder="day">
-                <select id="month-select">
+                <input type="number" name="day" id="day" placeholder="day" required>
+                <select id="month-select" required>
                     <option value="months">--Please choose your birth month--</option>
                     <option value="jan">Jan</option>
                     <option value="feb">Feb</option>
