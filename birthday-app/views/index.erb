@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Birthday app</title>
+        <link href="<%= url("/styles.css") %>" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hello there! <%= @name %></h1>
+            <form>
+            <section>
+                <label for="name"><span>What's your name?</span></label>
+            </section>
+            <section>
+                <input type="text" id="name" placeholder="First name">
+            </section>
+            <section>
+                <label for="day"><span>When's your birthday?</span></label>
+            </section>
+            <section>
+                <input type="number" id="day" placeholder="day">
+                <select id="month-select">
+                    <option value="months">--Please choose your birth month--</option>
+                    <option value="jan">Jan</option>
+                    <option value="feb">Feb</option>
+                    <option value="mar">Mar</option>
+                    <option value="apr">Apr</option>
+                    <option value="may">May</option>
+                    <option value="jun">Jun</option>
+                    <option value="jul">Jul</option>
+                    <option value="aug">Aug</option>
+                    <option value="sep">Sep</option>
+                    <option value="oct">Oct</option>
+                    <option value="nov">Nov</option>
+                    <option value="dec">Dec</option>
+                </select>
+            </section>
+            <section>
+                <input type="submit" value="submit">
+            </section>
+            </form>
+            <% # <img src = 'https://i.imgur.com/wJCdIxV.jpeg' width= '500px' height="700px"> %>
+        </div>
+    </body>
+</html>
+  <% # https://i.imgur.com/5bQYlkl.mp4 b6174b %>
