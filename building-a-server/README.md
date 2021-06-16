@@ -73,6 +73,8 @@ Try the following challenges, in any order you like:
 
 3. Create a separate `NoteList` class and make a notes app you can control over the network.
 
+<img src="/screenshots/note-list.png" width = "60%">
+
 ### Getting the IP address
 
 On a mac, run:
