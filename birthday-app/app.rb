@@ -9,12 +9,9 @@ get "/" do # form
   erb :index
 end
 
-get "/birthday" do # birthday greetings
+post "/birthday" do # birthday greetings & countdown
+  p params
   @name = params[:name]
+  @days = params[:days]
   erb :user_birthday
-end
-
-get "/reminder" do # birthday is in X days
-  @name = params[:name]
-  erb :reminder
 end

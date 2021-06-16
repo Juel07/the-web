@@ -6,7 +6,11 @@
     </head>
     <body>
     <div class="container">
-        <h1>Happy Birthday <%= @name %>!</h1>
+    <%# if %>
+        <h1>Happy Birthday <%= @name %>! 🎉</h1>
+    <%#else %> 
+        <h1>Your birthday is in <%= @days %> days, <%= @name %> 😁</h1>
+    <%# end %>
     </div>
     </body>
 </html>
