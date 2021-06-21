@@ -11,7 +11,7 @@ get "/" do
 end
 
 post "/birthday" do
-  puts params # {"name"=>"Lola", "day"=>"4", "month"=>"may"}
+  # puts params => {"name"=>"Lola", "day"=>"4", "month"=>"may"}
   @name = params[:name]
   @day = params[:day].to_i
   @birth_month = params[:month].capitalize!
