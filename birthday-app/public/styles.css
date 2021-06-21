@@ -1,6 +1,7 @@
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Sans-Serif;
+  font-family: "Noto Sans", sans-serif;
   background-color: #f3ffc6;
+  font-weight: 300;
 }
 
 .container {
@@ -8,8 +9,14 @@ body {
   place-items: center;
 }
 
+.container h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
 form {
   border: 3px solid black;
+  border-radius: 5px;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -21,18 +28,28 @@ form > * {
   padding-bottom: 1em;
 }
 
-label span{
-  font-size: 20px;
+label span {
+  font-size: 24px;
 }
 
-input, select {
+input,
+select {
   padding: 0.5em;
   border: 2px solid black;
   border-radius: 5px;
   outline: none;
 }
 
-::placeholder{
-  font-size: 16px;
+input[type="submit"] {
+  background-color: rgb(32, 32, 32);
+  color: #fdfdfd;
+  transition: 0.25s ease;
+}
 
+input[type="submit"]:hover {
+  transform: scale(1.1);
+}
+
+::placeholder {
+  font-size: 16px;
 }
